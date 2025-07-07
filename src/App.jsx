@@ -4,9 +4,7 @@ import ChatLog from './components/ChatLog';
 import messages from './data/messages.json';
 
 const App = () => {
-  const [entries, setEntries] = useState(
-    messages.map((entry) => ({...entry}))
-  );
+  const [entries, setEntries] = useState(messages);
 
   const toggleLike = (id) => {
     const updatedEntries = entries.map((entry) =>
